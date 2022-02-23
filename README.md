@@ -13,7 +13,8 @@ Ce fichier est reconnu par Android comme par Iphone, il suffit de l'importer dan
 - créer un scripte awk capable de filtrer correctement la sortie de l'OCR
 - composer un fichier qui liste l'ensemble de numéros trouvés- transformer le fichier en un fichier .vcf correctement formaté avec les noms des contacts qui seront auto incrémentés selon une règle prédéfinie.
 
-# DIFFICULTES- éviter la pertes de certains numéros à cause d'une mauvaise sortie OCR
+# DIFFICULTES
+- éviter la pertes de certains numéros à cause d'une mauvaise sortie OCR
 ( reconnaître le syntaxe systématique d'un groupe d'erreur pour gérer ces cas. Par exemple: +33 o6... est en réalité +33 06)
 - gérer les doublons- gérer les formats internationaux des numéros et les types d'écriture (+33 06 ou 06 ou 336 ou +33-06.. etc.)
 - correctement arranger les fiches numéros à l'intérieur du .vcf
