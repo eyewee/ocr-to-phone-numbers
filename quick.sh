@@ -1,0 +1,2 @@
+#!/bin/sh 
+cat raw_output.txt | grep -oh '+.............*' | grep "^+[0-9 -:]*[:.]\?" | sed  "s/[0-9]\{2\}\.[0-9]\{2\}\.[0-9]\{4\}//g" | grep -o "+[0-9 -]*" | sed 's/ //g; s/-//g' | sort -u | awk '{print "ccc-" NR "-Client" $s}' |  sed 's/$/\'$'\n''X-GROUP-MEMBERSHIP:My CCC\'$'\n''END:VCARD\'$'\n''/g'  | sed 's~+~\'$'\n''TEL;CELL:+~g' | sed 's[ccc[BEGIN:VCARD\'$'\n''VERSION:2.1\'$'\n''FN:ccc[g'
