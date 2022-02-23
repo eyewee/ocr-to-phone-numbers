@@ -27,39 +27,47 @@ Nous avons divisé cette procédure en plusieurs étapes (scripts) pour facilite
 - Étape 1: scanner les captures d'écran avec une bibliothèque OCR (Abby Fine Reader dans notre cas)
 - Étape 2: dans le fichier obtenu; supprimer toutes les apparences des chaînes de caractère suivantes: 
 Dans le cas de version WhatsApp russe, il y a des élément parasites qui s'infiltrent:
+```
 ": "
 "(-а)"
 "номер"
+```
 
 ou si la version du WhatsApp est anglaise:
+```
 ": "
 "number"
+```
 
 ou française:
+```
 ": "
 "numéro"
+```
 
 - Étape 3: filtre des numéros.
 De la manière suivante ulitiliser le script "script.sh" qui va créer une liste des numéros :
-
+```
 sh script.sh > step3.txt
-
+```
 (il faut l'exécuter dans un dossier contenant votre fichier "raw_output.txt" généré par la bibliothèque OCR)
 Vérifiez si le fichier sortie_finale.txt ne comporte pas des anomalies.
 
 - Étape 4 création d'un fichier VCF.
 Il faut l'exécuter le script "script2.sh" dans un dossier contenant votre fichier précédent "step3.txt " de la manière suivante:
-
+```
 sh script2.sh > step4.txt
-
+```
 Le script va donner le nom "ccc-1-Client" au premier nouveau contact. Il va incrémenter le 1 en attribuant un nom unique à chaque client. Le nouveau groupe de contacts sera appelé "My CCC" mais on peut le changer, il suffit de remplacer "My CCC" dans le script par ce que vous voulez. 
 
 - Étape 5 importer le fichier VCF.
 Vous pouvez importer ce fichier de la manière qui vous plaît à l'aide des outils intégrés dans l'application contacts de Iphone ou Android.
 
 - Remarque.
-Si vous voulez tout faire en une seule étape, j'ai inclus le fichier "quick.sh" à éxecuter dans le dossier contenant votre fichier "raw_output.txt" de cette manière :sh quick.sh > output.txt
-
+Si vous voulez tout faire en une seule étape, j'ai inclus le fichier "quick.sh" à éxecuter dans le dossier contenant votre fichier "raw_output.txt" de cette manière :
+```
+sh quick.sh > output.txt
+```
 
 
 
