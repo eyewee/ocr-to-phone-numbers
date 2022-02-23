@@ -10,7 +10,7 @@ Ce fichier est reconnu par Android comme par Iphone, il suffit de l'importer dan
 # OBJECTIF
 - faire des captures d'écrans sur WhatsApp
 - scanner à l'aide d'une  bibliothèque OCR (reconnaissance du texte)
-- créer un scripte awk capable de filtrer correctement la sortie de l'OCR
+- créer une série des scriptes capables de filtrer correctement la sortie de l'OCR
 - composer un fichier qui liste l'ensemble de numéros trouvés- transformer le fichier en un fichier .vcf correctement formaté avec les noms des contacts qui seront auto incrémentés selon une règle prédéfinie.
 
 # DIFFICULTES
