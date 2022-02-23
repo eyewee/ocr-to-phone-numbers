@@ -46,7 +46,7 @@ ou française:
 ```
 
 - Étape 3: filtre des numéros.
-De la manière suivante ulitiliser le script "script.sh" qui va créer une liste des numéros :
+De la manière suivante ulitiliser le script "script.sh" qui va créer une liste des numéros:
 ```
 sh script.sh > step3.txt
 ```
