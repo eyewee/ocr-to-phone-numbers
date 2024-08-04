@@ -1,11 +1,8 @@
 # INTRO
 
-Un jour j'ai eu pour mission d'aider un ami à gérer l'afflux de nouveaux numéros de téléphone sur ses nombreux groupes WhatsApp. En effet, à peu près au bout de chaque nouvelle mois, mon ami faisait face à plus de 3000 nouveaux numéros auxquels il devait envoyer des messages en masse. Sauf que la limitation était telle, que pour ne pas se faire bannir sur Whatsapp, le numéros devaient être enregistrés dans ses contacts sur son téléphone.
-Nous avons pu remédier à ce problème en faisant des captures d'écran des lignes contenant des numéros sur Whatsapp. 
-Puis en les analysant avec n'importe quelle bibliothèque OCR (exemple: Abby Fine Reader). 
-Ensuite on analyse la sortie avec un script fait maison. 
-En même temps, on crée un fichier .csv que l'on renomme en fichier contacts  de format .vcf. 
-Ce fichier est reconnu par Android comme par Iphone, il suffit de l'importer dans les contacts pour que l'OS fasse le nécessaire afin d'intégrer l'ensemble de nouveaux numéros.  
+Un jour, j'ai été chargé d'aider un ami à gérer l'afflux de nouveaux numéros de téléphone dans ses nombreux groupes WhatsApp. Chaque mois, il devait traiter plus de 3000 nouveaux numéros pour envoyer des messages en masse. Cependant, pour éviter de se faire bannir de WhatsApp, il fallait enregistrer ces numéros dans les contacts de son téléphone, ce qui représentait un défi considérable.
+
+Nous avons trouvé une solution en prenant des captures d'écran des lignes contenant les numéros sur WhatsApp. Nous avons ensuite utilisé une bibliothèque OCR, comme Abby Fine Reader, pour extraire les numéros des captures d'écran. Après cela, nous avons analysé les données extraites avec un script personnalisé. Simultanément, nous avons créé un fichier `.csv` que nous avons converti en fichier `.vcf` (format vCard). Ce fichier peut être importé directement dans les contacts des téléphones Android et iPhone, permettant ainsi d'ajouter tous les nouveaux numéros automatiquement.
 
 # OBJECTIF
 - faire des captures d'écrans sur WhatsApp
